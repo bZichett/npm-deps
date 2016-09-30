@@ -10,7 +10,16 @@ function analyze(options, callback) {
   var pending = 0;
 
   // Iterate through all directories
-  dive(cwd, { directories: true, files: false }, eachDir, whenDone);
+  if(options.directories) {
+    options.directories = options.directories.split(',');
+    options.directories.forEach(function(dir){
+      eachDir(null, dir)
+    });
+    whenDone()
+  }
+  else{
+    dive(cwd, { directories: true, files: false }, eachDir, whenDone);
+  }
 
   function eachDir(err, dir) {
     if (err) return;
@@ -24,6 +33,10 @@ function analyze(options, callback) {
       return;
     }
 
+    checkPackage(dir, rel);
+  }
+
+  function checkPackage(dir, rel){
     // Check for existence of package.json and read it
     var pkgjson = path.join(dir, 'package.json');
     pending++;

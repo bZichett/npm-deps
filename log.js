@@ -3,7 +3,7 @@ var log = require('npmlog');
 var npmenv = require('npmenv')();
 
 // differentiate npm-deps' logs from npm's
-log.heading = 'npm-deps';
+log.heading = 'npm-deps-specify';
 
 // inherit log level from parent npm process if running
 // within an npm lifecycle script

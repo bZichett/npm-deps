@@ -25,6 +25,7 @@ attributes, like name and version, can be stored in a separate file such as
     -V, --version        output the version number
     -s, --silent         do not print out warnings
     -o, --output [file]  output to a file
+    -d, --directories[items]  override recursion and use a comma separated string list of paths that may contain a package.json
 
 ## Conflicts
 

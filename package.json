@@ -1,7 +1,7 @@
 {
-  "name": "npm-deps",
-  "version": "0.3.7",
-  "description": "Merges dependencies from multiple package.json files in subdirectories.",
+  "name": "npm-deps-specify",
+  "version": "0.4.1",
+  "description": "Either recursively merge dependencies from package.json files or specify directories which may contain package.json ",
   "keywords": [
     "package.json",
     "npm",
@@ -10,8 +10,8 @@
     "subdirectories"
   ],
   "main": "index.js",
-  "author": "Automattic, Inc.",
-  "repository": "git@github.com:Automattic/npm-deps.git",
+  "author": "Automattic, Inc & Ben Zichettello",
+  "repository": "git@github.com:bZichett/npm-deps-specify.git",
   "license": "BSD",
   "dependencies": {
     "commander": "2.2.0",
@@ -22,6 +22,6 @@
     "npmlog": "~0.1.1"
   },
   "bin": {
-    "npm-deps": "./bin/npm-deps"
+    "npm-deps-specify": "./bin/npm-deps-specify"
   }
 }
