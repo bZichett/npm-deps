@@ -1,6 +1,6 @@
 {
   "name": "npm-deps-specify",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "Either recursively merge dependencies from package.json files or specify directories which may contain package.json ",
   "keywords": [
     "package.json",
