@@ -1,4 +1,4 @@
-var fs = require('graceful-fs');
+var fs = require('fs');
 var dive = require('dive');
 var path = require('path');
 var log = require('./log');
